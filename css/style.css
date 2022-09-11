@@ -1,0 +1,167 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 1200px;
+}
+
+.mainHeader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(221, 221, 221);
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerLogo a{
+    font-weight: bold;
+    font-size: 28px;
+    color: #333333;
+}
+
+
+.headerNavList{
+    display: flex;
+    gap: 45px;
+    
+}
+
+.headerNavList li a{
+    text-decoration: none;
+    color: #828282;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.headerNavList li a:hover{
+    text-decoration: none;
+    color: #333333;
+}
+
+.selected{
+    color: black;
+    font-weight: 700;
+}
+
+.mainContent{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#items{
+    width: 70%;
+    height: 100px;
+}
+
+#cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 100px;
+}
+
+.itemCard{
+    width: 269px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 3px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+
+.itemCard:hover{
+    border: 3px solid #37268C;
+}
+.productImage{
+    height: 40%;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.aboutProduct{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.productCategory{
+    background-color: #2E245E;
+    color: #F5F5F5;
+    padding: 5px;
+    width: 90px;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.productName{
+    color: #333333;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.productDescription{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   font-size: 12px;
+   line-height: 19px;
+   color: #828282;
+}
+
+.productPrice{
+    color: #37268C;
+    font-weight: 600;
+}
+
+#addToCart{
+    border: none;
+    text-align: start;
+    background-color: #ffffff;
+    padding: 0;
+    cursor: pointer;
+    width: 135px;
+    color: #333333;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+#addToCart:hover{
+    color: #37268C;
+    text-decoration: underline;
+}
+
+#itemsCart{
+    width: 27%;
+}
+
+.categoryNotFound{
+    font-weight: 700;
+    font-size: 25px;
+    color: #9b9b9b;
+    text-align: center;
+}
