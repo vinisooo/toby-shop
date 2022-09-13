@@ -20,7 +20,7 @@ function displayProducts(list){
                 <span class="productCategory">${list[i].tag}</span>
                 <h3 class="productName">${list[i].nameItem}</h3>
                 <p class="productDescription">${list[i].description}</p>
-                <span class="productPrice">R$${list[i].value}.00</span>
+                <span class="productPrice">R$${list[i].value.toFixed(2)}</span>
 
                 <button id="addToCart">Adicionar ao carrinho</button>
             </div>
@@ -39,24 +39,32 @@ displayProducts(data);
 
 
 //PESQUISA POR CATEGORIA
-const filterItem = document.getElementsByClassName("filterFor");
+const filterItemCategories = document.getElementsByClassName("filterFor");
 
-for (let i = 0; i < filterItem.length; i++){
-    filterItem[i].addEventListener("click", filter);
+for (let i = 0; i < filterItemCategories.length; i++){
+    filterItemCategories[i].addEventListener("click", filter);
 }
 
 function filter(event){
 
-    const categoryNotFound = document.createElement("h2");
-    categoryNotFound.innerText = "Ainda não temos essa categoria de produtos disponível";
-    categoryNotFound.classList.add("categoryNotFound");
-
     let filteredItems =[];
+    const itemCategory = event.target;
     const itemText = event.target.innerHTML.toLowerCase();
+    
+    for (item of filterItemCategories){
+        if (item.classList[1] == "selected"){
+            item.classList.remove("selected");
+        }
+    }
+
+    if (itemCategory.classList[1] != "selected"){
+        itemCategory.classList.add("selected");
+    }
 
     for (element of data){
         if (itemText == element.tag[0].toLowerCase()){
             filteredItems.push(element);
+
 
         }if (itemText == "todos"){
             displayProducts(data);
@@ -132,7 +140,7 @@ function createCartItem(){
         </div>
         <div class="cartProductDetails">
             <h3 class="productNameCart">${cartItemsList[i].nameItem}</h3>
-            <span class="productPriceCart">R$${cartItemsList[i].value}</span>
+            <span class="productPriceCart">R$${cartItemsList[i].value.toFixed(2)}</span>
             <button id="removeBtn">Remover produto</button>
         </div>
         </li>`
