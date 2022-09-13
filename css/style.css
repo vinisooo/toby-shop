@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     min-height: 120vh;
+    transition: 0.4s;
 }
 
 .container{
@@ -15,6 +16,7 @@ body{
     background-color: white;
     box-shadow: 0 0 10px rgb(221, 221, 221);
     position: fixed;
+    transition: 0.4s;
 }
 
 .headerContent{
@@ -316,7 +318,6 @@ body{
     gap: 150px;
 }
 
-
 .emptyCart{
     font-weight: 700;
     color: #333333;
@@ -330,3 +331,5 @@ body{
     text-align: center;
     margin-top: 10px;
 }
+
+
