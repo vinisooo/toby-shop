@@ -93,7 +93,7 @@ const data = [
   {
     id: 10,
     img: "../img/nike-shoe-new-ballance.png",
-    nameItem: "Nike Free Shoes",
+    nameItem: "Free Shoes",
     description:"Nike Free always helps enhance your body's natural motion, but the barefoot-like-running experiences vary from shoe to shoe. These variances are graded on the.",
     value: 165.00,
     addCart: "Adicionar ao carrinho",
