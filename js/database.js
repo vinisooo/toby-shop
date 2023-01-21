@@ -3,7 +3,7 @@
 const data = [
   {
     id: 1,
-    img: "../img/jaqueta.svg",
+    img: "./img/jaqueta.svg",
     nameItem: "Lightweight Jacket",
     description:
       "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    img: "../img/gorro.svg",
+    img: "./img/gorro.svg",
     nameItem: "Black Hat",
     description:
       "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 3,
-    img: "../img/mascara.svg",
+    img: "./img/mascara.svg",
     nameItem: "Mask",
     description:
       "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
@@ -33,7 +33,7 @@ const data = [
   },
   {
     id: 4,
-    img: "../img/camiseta_preta.svg",
+    img: "./img/camiseta_preta.svg",
     nameItem: "T-Shirt",
     description:
       "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
@@ -43,7 +43,7 @@ const data = [
   },
   {
     id: 5,
-    img: "../img/camiseta_branca.svg",
+    img: "./img/camiseta_branca.svg",
     nameItem: "Short-Sleeve T-Shirt",
     description:
       "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
@@ -53,7 +53,7 @@ const data = [
   },
   {
     id: 6,
-    img: "../img/moletom.svg",
+    img: "./img/moletom.svg",
     nameItem: "Champion Packable Jacket",
     description:
       "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
@@ -63,7 +63,7 @@ const data = [
   },
   {
     id: 7,
-    img: "../img/airmax-excee.png",
+    img: "./img/airmax-excee.png",
     nameItem: "Air Max Excee",
     description:
       "DESIGN ICÔNICO COM UM TOQUE MODERNO. Inspirado no Nike Air Max 90, o Nike Air Max Excee celebra um clássico com um visual repaginado.",
@@ -73,7 +73,7 @@ const data = [
   },
   {
     id: 8,
-    img: "../img/nike-Dunk.jpg",
+    img: "./img/nike-Dunk.jpg",
     nameItem: "Nike Dunk",
     description:
       "O Nike Dunk foi praticamente um dos primeiros sneakers da empresa norte-americana que conquistaram o universo skateboarding, dando início à linha de tênis Nike ...",
@@ -83,7 +83,7 @@ const data = [
   },
   {
     id: 9,
-    img: "../img/nike-free-shoes.png",
+    img: "./img/nike-free-shoes.png",
     nameItem: "Nike Free Shoes",
     description:"Nike Free always helps enhance your body's natural motion, but the barefoot-like-running experiences vary from shoe to shoe. These variances are graded on the.",
     value: 165.00,
@@ -92,7 +92,7 @@ const data = [
   },
   {
     id: 10,
-    img: "../img/nike-shoe-new-ballance.png",
+    img: "./img/nike-shoe-new-ballance.png",
     nameItem: "Nike Free Shoes",
     description:"Nike Free always helps enhance your body's natural motion, but the barefoot-like-running experiences vary from shoe to shoe. These variances are graded on the.",
     value: 165.00,
